@@ -289,7 +289,7 @@ header a:hover .item_p {
 }
 
 .wrapper_first_block {
-    height: 500px;
+    height: 100vh;
     padding-left: 20px;
     background: url(../img/cit.jpg) center;
     background-size: cover;
