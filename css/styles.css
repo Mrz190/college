@@ -7,7 +7,7 @@
 }
 
 li {
-    list-style-position: none;
+    list-style: none;
 }
 
 *::selection {
