@@ -6,6 +6,10 @@
     font-family: 'Montserrat', sans-serif;
 }
 
+li {
+    list-style-position: none;
+}
+
 *::selection {
     background: rgb(163, 154, 17);
     color: rgb(255, 255, 255);
