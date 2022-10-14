@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/styles.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <script type="text/javascript">
+        $(document).on("click", ".wrapper_item_triangle", function (e) {
+            e.preventDefault();
+            var id = $(this).attr('href');
+            var top = $(id).offset().top; // получаем координаты блока
+            $('body, html').animate({ scrollTop: top }, 800); // плавно переходим к блоку
+        });
+    </script>
+    <div class="meeting_wrapper">
+        <h2 align="center">Мечтаешь стать программистом?</h2>
+        <div class="wrapper_img_meeting">
+            <div class="img_preview"></div>
+        </div>
+        <h2 align="center">Давайте начнем!</h2>
+        <div class="wrapper_triangle">
+            <a class="wrapper_item_triangle" href="#header">
+                <div class="triangle"></div>
+            </a>
+        </div>
+    </div>
+
+    <header id="header">
+        <a href="index.html" class="item-header_left">
+            <p class="item_p">Главная</p>
+            <div></div>
+        </a>
+        <a href="https://pgaek.by" target="_blank" class="item-header_bottom">
+            <p class="item_p">Колледж</p>
+            <div></div>
+        </a>
+        <a href="more.html" class="item-header_right">
+            <p class="item_p">Подробнее</p>
+            <div></div>
+        </a>
+    </header>
+
+    <div class="wrapper_first_block">
+        <div class="filter"></div>
+        <div class="cit_right_wrapper">
+            <h3 style="padding-left: 10px;" align="left" class="cit_h">
+                "Язык, который не <br>меняет вашего представления<br> о программировании, <br>недостоин изучения"<br><br>
+                <span style="float: right;">&#169; Alan J. Perlis</span>
+            </h3>
+        </div>
+    </div>
+
+    <div class="wrapper_second_block">
+        <div class="wrapper_item_block">
+            <div class="photo_block_item" id="first_photo"><!-- photo --></div>
+            <div class="info_block_item"><span class="text_block_item">Хотите стать высококлассным программистом? Хотите зарабатывать много и быть незаменимым? Для вас есть специальность - программное обеспечение информационных технологий. У нас в колледже вас обучат, а так же дадут образование уровня ССО. Нравится сидеть дома и зарабатывать на своем уме? Вам к нам!</span></div>
+        </div>
+        <div class="wrapper_item_block alt">
+            <div class="info_block_item"><span class="text_block_item">Только в нашем колледже вы сможете получить качественные знания от первоклассных преподавателей! Требования для поступления на специальность высоки, но знания, которые дают здесь - в разы выше.</span></div>
+            <div class="photo_block_item" id="second_photo"></div>
+        </div>
+        <div class="wrapper_item_block" style="margin-bottom: 0px;">
+            <div class="photo_block_item" id="third_photo"></div>
+            <div class="info_block_item"><span class="text_block_item">По окончанию нашего колледжа на специализации "Программное обеспечение информационных технологий" вы сможете работать в целом ряду профессий, связанных с программированием! Спектр выбора большой: гейм-дизайнер, системный администратор, Тестировщик ПО, разработчик веб-сайтов/игр, и это даже не половина списка!</span></div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="wrapper_join"><a href="https://pgaek.by" target="_blank" class="join_a">Присоединяйтесь к нам</a></div>
+        <br>
+        <h5 class="powerd_info">Powerd by: Mrz & Dima & Sene4ka</h5>
+        <h6 class="auth_privacy">&#169; 2022</h6>
+    </footer>
+</body>
+
+</html>
